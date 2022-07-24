@@ -1,0 +1,7 @@
+passing argument to a child react component
+
+<Profile audio = {this.audio}/>
+
+receiving argument in child from parent
+
+{this.prop.audio.audio}
