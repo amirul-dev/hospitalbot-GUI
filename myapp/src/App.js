@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Profile from './profile'
+import Signup from './Signup';
 
 function App() {
 
@@ -43,17 +44,29 @@ function ListenFn(){
     )
   })                                   //empty array to run the fn only once
 
-  return (
-    <div>
-      {(typeof page.pages === 'undefined') ? (
-        <p>Loading...</p>
-      ) : (
-        (audio.audio === 'profile') ? (
-        <Profile/>): ( <div></div>
-        )
-      )}
-    </div>
-  )
+  //return <Signup/>
+
+  if (typeof page.pages === 'undefined'){
+    return <p>Loading...</p>
+  } else if (audio.audio === 'profile'){
+    return <Profile/>
+  } else if (audio.audio === 'register'){
+    return <Signup/>
+  }
+  // return (
+  //   <div>
+  //     {(typeof page.pages === 'undefined') ? (
+  //       <p>Loading...</p>
+  //     ) : (
+  //       (audio.audio === 'profile') ? (
+  //       <Profile/>): ( <div></div>
+  //       )
+  //     )}
+  //     {
+
+  //     }
+  //   </div>
+  // )
 }
 
 export default App
