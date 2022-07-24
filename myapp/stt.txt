@@ -1,0 +1,8 @@
+stt repo in riggu rig - vosk
+
+pip install vosk and PyAudio in env
+
+if PyAudio not working, download correct wheel from https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio and install by 
+"pip install wheel file"
+
+change model location

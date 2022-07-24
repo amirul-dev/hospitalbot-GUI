@@ -1,0 +1,5 @@
+end http logging in flask
+
+import logging
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
